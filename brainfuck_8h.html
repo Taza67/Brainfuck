@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Brainfuck: Référence du fichier inc/brainfuck.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Brainfuck
+   </div>
+   <div id="projectbrief">Interpréteur-Compilateur du langage Brainfuck</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier brainfuck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>En-tête de l'interpréteur Brainfuck.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="merror_8h_source.html">merror.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast_8h_source.html">ast.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tstack_8h_source.html">tstack.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utilities_8h_source.html">utilities.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de brainfuck.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="brainfuck_8h__incl.png" border="0" usemap="#ainc_2brainfuck_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="brainfuck_8h__dep__incl.png" border="0" usemap="#ainc_2brainfuck_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="brainfuck_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8b53ac32f5ae05b8aa2d8df990501034"><td class="memItemLeft" align="right" valign="top"><a id="a8b53ac32f5ae05b8aa2d8df990501034"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brainfuck_8h.html#a8b53ac32f5ae05b8aa2d8df990501034">HELP_NOTICE_FORMAT</a></td></tr>
+<tr class="memdesc:a8b53ac32f5ae05b8aa2d8df990501034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notice d'utilisation du programme. <br /></td></tr>
+<tr class="separator:a8b53ac32f5ae05b8aa2d8df990501034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad315e393014449019854a92943bbfe4a"><td class="memItemLeft" align="right" valign="top"><a id="ad315e393014449019854a92943bbfe4a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brainfuck_8h.html#ad315e393014449019854a92943bbfe4a">EMPTY_BUFFER</a>()&#160;&#160;&#160;	char _c = 0; while ((_c = getchar()) != '\n' &amp;&amp; _c != EOF) \</td></tr>
+<tr class="memdesc:ad315e393014449019854a92943bbfe4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction macro permettant de vider le buffer. <br /></td></tr>
+<tr class="separator:ad315e393014449019854a92943bbfe4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8eb0ca69f5dd626d00dc15c6a7daaf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brainfuck_8h.html#a8b8eb0ca69f5dd626d00dc15c6a7daaf">AST_TYPES_STRINGS</a></td></tr>
+<tr class="memdesc:a8b8eb0ca69f5dd626d00dc15c6a7daaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensemble des chaînes de caractères associées à chaque type d'arbre possible pour un arbre de syntaxe abstraite (AST) du langage Brainfuck.  <a href="brainfuck_8h.html#a8b8eb0ca69f5dd626d00dc15c6a7daaf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b8eb0ca69f5dd626d00dc15c6a7daaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a4295667663920143c66eea3853c9dbe6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6">EXEC_MODES</a> { <br />
+&#160;&#160;<a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6a333db1e324b69e45a22f910cff41f077">MODE_HELP</a>
+, <a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6afedfedc622915a6b16d90e519baa1fcd">MODE_INTERPRET</a>
+, <a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6a25bd91a727248b8cb4eff9c388b73ebd">MODE_COMPILE</a>
+, <a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6a0c878d350421f645964119faa0a0334e">MODE_DECOMPILE</a>
+, <br />
+&#160;&#160;<a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6ac40c087caf0a13ef4b1220bb72f244f9">MODE_VM</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a4295667663920143c66eea3853c9dbe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Énumération des modes d'exécution du programme.  <a href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4295667663920143c66eea3853c9dbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1a4637a380fb17dbaf213af35f2d85"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85">AST_TYPES</a> { <br />
+&#160;&#160;<a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85ac2df1c02b86b194bfabc843e6436e1f1">A_INC</a>
+, <a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85a1ac2de492d0f411a68e59f70085c1ebb">A_DEC</a>
+, <a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85a4b50bcc122a7fdaf412374c1fe2fff5f">A_RIGHT</a>
+, <a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85adc9b7c1ae50f3ebac052bb14e6f5724f">A_LEFT</a>
+, <br />
+&#160;&#160;<a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85a185dd819551379d3226a8cb4fe279874">A_PUT</a>
+, <a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85a1b8937857c6943dee5a035ecf88c06fb">A_GET</a>
+, <a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85a55272519c6ef221e532126904c067ce9">A_LOOP</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:acd1a4637a380fb17dbaf213af35f2d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Énumération des types d'arbres associés aux instructions du langage Brainfuck.  <a href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acd1a4637a380fb17dbaf213af35f2d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>En-tête de l'interpréteur Brainfuck. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Mourtaza Akil (akilmourtaza.fr) </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024-04-20 </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a8b8eb0ca69f5dd626d00dc15c6a7daaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8eb0ca69f5dd626d00dc15c6a7daaf">&#9670;&nbsp;</a></span>AST_TYPES_STRINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AST_TYPES_STRINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur :</b><div class="fragment"><div class="line">    { \</div>
+<div class="line">    <span class="stringliteral">&quot;PLUS&quot;</span>, <span class="stringliteral">&quot;MOINS&quot;</span>, <span class="stringliteral">&quot;DROITE&quot;</span>, <span class="stringliteral">&quot;GAUCHE&quot;</span>, \</div>
+<div class="line">    <span class="stringliteral">&quot;ÉCRITURE&quot;</span>, <span class="stringliteral">&quot;LECTURE&quot;</span>, <span class="stringliteral">&quot;BOUCLE&quot;</span> \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Ensemble des chaînes de caractères associées à chaque type d'arbre possible pour un arbre de syntaxe abstraite (AST) du langage Brainfuck. </p>
+<dl class="section note"><dt>Note</dt><dd>Les chaînes doivent OBLIGATOIREMENT être dans le même ordre que l'énu- mération qui définit les codes des types d'arbres.</dd></dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85" title="Énumération des types d&#39;arbres associés aux instructions du langage Brainfuck.">AST_TYPES</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="acd1a4637a380fb17dbaf213af35f2d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1a4637a380fb17dbaf213af35f2d85">&#9670;&nbsp;</a></span>AST_TYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="brainfuck_8h.html#acd1a4637a380fb17dbaf213af35f2d85">AST_TYPES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Énumération des types d'arbres associés aux instructions du langage Brainfuck. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85ac2df1c02b86b194bfabc843e6436e1f1"></a>A_INC&#160;</td><td class="fielddoc"><p>Incrémentation de la case de données pointée. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85a1ac2de492d0f411a68e59f70085c1ebb"></a>A_DEC&#160;</td><td class="fielddoc"><p>Décrémentation de la case de données pointée. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85a4b50bcc122a7fdaf412374c1fe2fff5f"></a>A_RIGHT&#160;</td><td class="fielddoc"><p>Déplacement du pointeur de données à droite. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85adc9b7c1ae50f3ebac052bb14e6f5724f"></a>A_LEFT&#160;</td><td class="fielddoc"><p>Déplacement du pointeur de données à gauche. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85a185dd819551379d3226a8cb4fe279874"></a>A_PUT&#160;</td><td class="fielddoc"><p>Affichage de la valeur de la donnée pointée. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85a1b8937857c6943dee5a035ecf88c06fb"></a>A_GET&#160;</td><td class="fielddoc"><p>Récupération d'une entrée. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd1a4637a380fb17dbaf213af35f2d85a55272519c6ef221e532126904c067ce9"></a>A_LOOP&#160;</td><td class="fielddoc"><p>Boucle. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4295667663920143c66eea3853c9dbe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4295667663920143c66eea3853c9dbe6">&#9670;&nbsp;</a></span>EXEC_MODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="brainfuck_8h.html#a4295667663920143c66eea3853c9dbe6">EXEC_MODES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Énumération des modes d'exécution du programme. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a4295667663920143c66eea3853c9dbe6a333db1e324b69e45a22f910cff41f077"></a>MODE_HELP&#160;</td><td class="fielddoc"><p>Affichage de la notice d'utilisation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4295667663920143c66eea3853c9dbe6afedfedc622915a6b16d90e519baa1fcd"></a>MODE_INTERPRET&#160;</td><td class="fielddoc"><p>Interprétation d'un programme Brainfuck. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4295667663920143c66eea3853c9dbe6a25bd91a727248b8cb4eff9c388b73ebd"></a>MODE_COMPILE&#160;</td><td class="fielddoc"><p>Compilation d'un programme Brainfuck. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4295667663920143c66eea3853c9dbe6a0c878d350421f645964119faa0a0334e"></a>MODE_DECOMPILE&#160;</td><td class="fielddoc"><p>Décompilation d'un bytecode Brainfuck. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4295667663920143c66eea3853c9dbe6ac40c087caf0a13ef4b1220bb72f244f9"></a>MODE_VM&#160;</td><td class="fielddoc"><p>Exécution d'un programme Brainfuck en Bytecode. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
