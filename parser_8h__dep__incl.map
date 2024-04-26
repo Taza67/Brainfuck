@@ -1,0 +1,8 @@
+<map id="inc/parser.h" name="inc/parser.h">
+<area shape="rect" id="node1" title="Module implémentant des fonctions liées à l&#39;analyseur." alt="" coords="159,5,256,32"/>
+<area shape="rect" id="node2" href="$compiler_8h.html" title="Module implémentant la compilation de programmes Brainfuck." alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node4" href="$decompiler_8h.html" title="Module implémentant la décompilation de bytecode ou d&#39;arbres de syntaxe abstraite de programmes Brain..." alt="" coords="143,80,272,107"/>
+<area shape="rect" id="node6" href="$parser_8c.html" title="Module implémentant des fonctions liées à l&#39;analyseur." alt="" coords="297,80,393,107"/>
+<area shape="rect" id="node3" href="$compiler_8c.html" title="Module implémentant la compilation de programmes Brainfuck." alt="" coords="6,155,118,181"/>
+<area shape="rect" id="node5" href="$decompiler_8c.html" title="Module implémentant la décompilation de bytecode ou d&#39;arbres de syntaxe abstraite de programmes Brain..." alt="" coords="143,155,271,181"/>
+</map>
