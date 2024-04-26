@@ -37,7 +37,7 @@
 
 /**
  * @typedef Tstack
- * @struct
+ * @struct Tstack
  * @brief Structure représentant une pile implémentée avec un tableau.
  * 
  * Cette structure permet de représenter tout type de données (cf void *).
@@ -120,7 +120,7 @@ extern Tstack *tstack_push(Tstack *stackp, void *elementp, size_t element_size);
 /**
  * @brief Retourne le sommet de la pile.
  * 
- * @param stack La pile dont le sommet doit être renvoyé.
+ * @param stackp Le pointeur vers la pile dont le sommet doit être renvoyé.
  * @return void* Un pointeur vers le sommet de la pile.
  * 
  * @note Le type retourné étant (void *), il revient à l'utilisateur de
@@ -141,7 +141,7 @@ extern void *tstack_head(Tstack *stackp);
 /**
  * @brief Dépile et retourne le sommet de la pile
  * 
- * @param stack La pile dont le sommet doit être dépilé.
+ * @param stackp Le pointeur vers la pile dont le sommet doit être dépilé.
  * @param top_element Le pointeur de l'emplacement qui doit récupérer le sommet
  * de la pile.
  * @return void* Le pointeur qui récupère le sommet.

@@ -88,7 +88,7 @@
 
 /**
  * @typedef Astdata_type
- * @enum
+ * @enum Astdata_type
  * @brief Énumération des types de données d'un noeud d'arbre de syntaxe
  * abstraite.
  * 
@@ -106,7 +106,7 @@ typedef enum Astdata_type {
 
 /**
  * @typedef Astnode
- * @struct
+ * @struct Astnode
  * @brief Structure représentant un noeud d'arbre de syntaxe abstraite (AST).
  * 
  * Cette structure permet de représenter les éléments simples telles que les
@@ -122,7 +122,7 @@ typedef enum Astdata_type {
  */
 typedef struct Astnode {
    	int type;    ///< Type du noeud.
-	union {      ///< Données du noeud.
+	union {
 		int constant;    ///< Données constantes.
 		struct {
 			int id_lex;              		    ///< Numéro lexicographique.
@@ -130,7 +130,7 @@ typedef struct Astnode {
 			struct Astnode *son;     		    ///< Noeud fils.
 			struct Astnode *little_brother;     ///< Noeud petit-frère.
 		};               ///< Données de type arbre.
-	};
+	}; 			///< Données du noeud.
 } Astnode;
 
 /* -------------------------------------------------------------------------- */
